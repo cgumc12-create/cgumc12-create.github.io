@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #d4b896 0%, #c9a880 50%, #d4b896 100%);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(230, 215, 190, 0.95);
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            font-size: 32px;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 60px;
+            margin-bottom: 60px;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .item-name {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .item-price {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        .item-description {
+            font-size: 14px;
+            font-style: italic;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .menu-container {
+                padding: 30px 20px;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .section-title {
+                font-size: 24px;
+                letter-spacing: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="section-title">SPARKLING 氣泡</div>
+        
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">High Ball</span>
+                    <span class="item-price">200</span>
+                </div>
+                <div class="item-description">Japan whisky with soda and citrus peel</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">White lady 白色佳人</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Gin with Cointreau and lemon juice</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Gin Tonic</span>
+                    <span class="item-price">200</span>
+                </div>
+                <div class="item-description">Gin with tonic water</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Martini/Dry Martini</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Gin with vermouth</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">El Diablo 迪亞布羅</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Tequila with cassis liqueur, lemon juice and Ginger Soda</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Cosmopolitan 柯夢波丹</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Vodka with cranberry juice, Cointreau and lemon juice</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Gin Fizz</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Gin with lemon juice, syrup and soda</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Margarita 瑪格麗特</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Tequila with Cointreau and lemon juice</div>
+            </div>
+        </div>
+
+        <div class="section-title">CLASSIC 經典</div>
+        
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Old Fashion</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Whisky with sugar, bitters and citrus peel</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Sidecar 側車</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Brandy with Cointreau and lemon juice</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Whisky Sour</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Whisky with syrup and lemon juice</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Between the sheets 床第之間</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Brandy with white rum, Cointreau and lemon juice</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">God Father 教父</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Scotch Whisky and Amaretto</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">X.Y.Z</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Rum with Cointreau, lemon juice and syrup</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Gimlet 琴蕾</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Gin with lemon juice and syrup</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Daiquiri 黛綺莉</span>
+                    <span class="item-price">250</span>
+                </div>
+                <div class="item-description">Rum with lemon juice and syrup</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
