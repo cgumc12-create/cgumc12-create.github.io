@@ -22,7 +22,6 @@
             color: #cdcdcd;
             font-weight: 300;
             letter-spacing: 0.03em;
-            .word-break: break-all;
         }
 
         :lang(zh) {
@@ -86,12 +85,16 @@
             margin-bottom: 12px;
             border-bottom: 1px solid #b2966b50;
             padding-bottom: 8px;
+            gap: 16px; /* Add space between name and price */
         }
 
         .item-name {
             font-size: 24px;
             font-weight: 500;
             letter-spacing: 2px;
+            word-break: keep-all;
+            flex: 1;
+            min-width: 0; /* Allows flex item to shrink below content size */
         }
 
         .item-name :lang(zh) {
@@ -107,6 +110,7 @@
             color: #b2966b;
             font-size: 20px;
             font-style: italic;
+            flex-shrink: 0; /* Prevents price from shrinking */
         }
 
         .item-price::before {
