@@ -40,6 +40,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+
         }
         
         .overlay {
@@ -158,7 +159,12 @@
             max-width: 700px;
             line-height: 1.8;
             letter-spacing: 0.1em;
+        }
+        
+        /* Apply word-break: keep-all specifically for Chinese text */
+        :lang(zh-TW) .description {
             word-break: keep-all;
+            overflow-wrap: break-word;
         }
         
         .separator {
