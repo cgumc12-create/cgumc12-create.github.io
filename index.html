@@ -55,11 +55,8 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 0 20px;
             position: relative;
-            z-index: 1;
-            animation: fadeIn 1.5s ease-out;
-            flex: 1;
         }
         
         .logo {
@@ -340,76 +337,102 @@
                 height: 90px;
             }
         }
+
+        /* Add these new styles */
+        .header-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            z-index: 1;
+        }
+
+        .scrolling-content {
+            position: relative;
+            background: rgba(0, 0, 0, 0.9);
+            margin-top: 100vh;
+            z-index: 2;
+            padding-top: 60px;
+        }
     </style>
 </head>
 <body>
     <div class="overlay"></div>
-    <div class="container">
+    
+    <!-- New header section -->
+    <div class="header-content">
         <h1>TENDER's BAR</h1>
         <p style="font-size: 1.2rem; color: var(--light-white); margin-bottom: 10px; letter-spacing: 0.1em;">長庚大學飲料調製研究社</p>
         <h2>Cocktail Week Special Event</h2>
-        
-        <p class="story">
-            雞尾酒不僅色彩繽紛、滋味迷人，</br>
-            更像是一種無聲的語言，</br>
-            傳遞情緒與心意。</br></br>
-            如同花語訴說愛與思念，</br>
-            每一杯酒都藏著一段故事。</br></br>
-            那麼，今晚屬於你的，</br>
-            是哪一杯呢？
-        </p>
-        <p class="story" style="font-size: small;">
-            Cocktails are not only colorful and delicious,</br>
-            but also a silent language,</br>
-            conveying emotions and sentiments.</br></br>
-            Like the language of flowers expressing love and longing,</br>
-            each drink holds a story.</br></br>
-            So, which one belongs to you tonight?
-        
-        <div class="separator"></div>
-        <h2>本週菜單 MENU</h2>
-        
-        <div class="menu-container">
-            <div class="menu-buttons">
-                <a href="https://cgumc12-create.github.io/classic.html" target="_blank" class="menu-button">
-                    <div class="menu-icon">
-                        <i class="fas fa-glass-martini-alt"></i>
-                    </div>
-                    <span class="menu-label">經典調酒</span>
-                    <span style="font-size: 0.8rem; color: var(--gold-dark); margin-top: 5px;">Classic Cocktails</span>
-                </a>
-                
-                <a href="https://wordhanda.github.io/SPECIAL.pdf" target="_blank" class="menu-button">
-                    <div class="menu-icon">
-                        <i class="fas fa-cocktail"></i>
-                    </div>
-                    <span class="menu-label">瑞の特調</span>
-                    <span style="font-size: 0.8rem; color: var(--gold-dark); margin-top: 5px;">Special Cocktails</span>
-                </a>
+    </div>
 
-                <a href="https://wordhanda.github.io/menu.pdf" target="_blank" class="menu-button">
-                    <div class="menu-icon">
-                        <i class="fas fa-wine-glass"></i>
-                    </div>
-                    <span class="menu-label">隱藏菜單</span>
-                    <span style="font-size: 0.8rem; color: var(--gold-dark); margin-top: 5px;">Hidden Menu</span>   
-                </a>
+    <!-- Wrap the rest of the content -->
+    <div class="scrolling-content">
+        <div class="container">
+            <p class="story">
+                雞尾酒不僅色彩繽紛、滋味迷人，</br>
+                更像是一種無聲的語言，</br>
+                傳遞情緒與心意。</br></br>
+                如同花語訴說愛與思念，</br>
+                每一杯酒都藏著一段故事。</br></br>
+                那麼，今晚屬於你的，</br>
+                是哪一杯呢？
+            </p>
+            <p class="story" style="font-size: small;">
+                Cocktails are not only colorful and delicious,</br>
+                but also a silent language,</br>
+                conveying emotions and sentiments.</br></br>
+                Like the language of flowers expressing love and longing,</br>
+                each drink holds a story.</br></br>
+                So, which one belongs to you tonight?
+            </p>
+
+            <div class="separator"></div>
+            <h2>本週菜單 MENU</h2>
+            
+            <div class="menu-container">
+                <div class="menu-buttons">
+                    <a href="https://cgumc12-create.github.io/classic.html" target="_blank" class="menu-button">
+                        <div class="menu-icon">
+                            <i class="fas fa-glass-martini-alt"></i>
+                        </div>
+                        <span class="menu-label">經典調酒</span>
+                        <span style="font-size: 0.8rem; color: var(--gold-dark); margin-top: 5px;">Classic Cocktails</span>
+                    </a>
+                    
+                    <a href="https://wordhanda.github.io/SPECIAL.pdf" target="_blank" class="menu-button">
+                        <div class="menu-icon">
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                        <span class="menu-label">瑞の特調</span>
+                        <span style="font-size: 0.8rem; color: var(--gold-dark); margin-top: 5px;">Special Cocktails</span>
+                    </a>
+
+                    <a href="https://wordhanda.github.io/menu.pdf" target="_blank" class="menu-button">
+                        <div class="menu-icon">
+                            <i class="fas fa-wine-glass"></i>
+                        </div>
+                        <span class="menu-label">隱藏菜單</span>
+                        <span style="font-size: 0.8rem; color: var(--gold-dark); margin-top: 5px;">Hidden Menu</span>   
+                    </a>
+                </div>
             </div>
+            
+            <p class="description">探索本週最精緻的調酒作品，由我們專業的調酒師精心調製，為您帶來獨特的味覺體驗。</p>
+            <p class="description">Explore this week's finest cocktail creations, meticulously crafted by our professional bartenders to bring you a unique taste experience.</p>   
+
+            <div class="separator"></div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/cgu_bartend/" target="_blank" style="text-decoration: none; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><i class="fab fa-instagram"></i> cgu_bartend</a>
+            </div>
+
+            
+            <p class="warming">未成年請勿飲酒</br>喝酒不開車，開車不喝酒</p>
+            <p class="warming">No drinking under the age of 18.</br>Don't drink and drive, don't drive and drink.</p>
+            <p class="warming">未成年者の饮酒を禁止する</br>お酒を飲んだら運転しないでください</p>
         </div>
-        
-        <p class="description">探索本週最精緻的調酒作品，由我們專業的調酒師精心調製，為您帶來獨特的味覺體驗。</p>
-        <p class="description">Explore this week's finest cocktail creations, meticulously crafted by our professional bartenders to bring you a unique taste experience.</p>   
-
-        <div class="separator"></div>
-
-        <div class="social-links">
-            <a href="https://www.instagram.com/cgu_bartend/" target="_blank" style="text-decoration: none; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><i class="fab fa-instagram"></i> cgu_bartend</a>
-        </div>
-
-        
-        <p class="warming">未成年請勿飲酒</br>喝酒不開車，開車不喝酒</p>
-        <p class="warming">No drinking under the age of 18.</br>Don't drink and drive, don't drive and drink.</p>
-        <p class="warming">未成年者の饮酒を禁止する</br>お酒を飲んだら運転しないでください</p>
     </div>
     
     <div class="footer">
