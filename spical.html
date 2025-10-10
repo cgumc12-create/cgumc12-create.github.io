@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Noto+Serif+TC:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f9f7eb;
+            font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
+            padding: 40px 20px;
+            min-height: 100vh;
+            color: #222;
+            font-weight: 300;
+            letter-spacing: 0.03em;
+        }
+
+        :lang(zh) {
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 200;
+            letter-spacing: 0.1em;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(145deg, #fafafa, #fefdf9);
+            padding: 60px;
+            box-shadow: 
+                0 0 40px rgba(192, 192, 192, 0.1),
+                inset 0 0 50px rgba(192, 192, 192, 0.05);
+            border: 1px solid rgba(192, 192, 192, 0.2);
+        }
+
+        .section-title {
+            font-size: 36px;
+            letter-spacing: 12px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 300;
+            color: #b2966b;
+            word-wrap: keep-all;
+        }
+
+        .section-title:lang(zh) {
+            letter-spacing: 0.5em;
+            font-size: 32px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px 80px;
+            margin-bottom: 80px;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background: rgba(192, 192, 192, 0.05);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #b2966bac;
+            padding-bottom: 8px;
+            gap: 16px;
+        }
+
+        .item-name {
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            word-break: keep-all;
+            flex: 1;
+            min-width: 0; /* Allows flex item to shrink below content size */
+        }
+
+        .item-name :lang(zh) {
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 300;
+            margin-left: 8px;
+            font-size: 20px;
+            opacity: 0.9;
+            letter-spacing: 0.1em;
+        }
+
+        .item-price {
+            color: #b2966b;
+            font-size: 20px;
+            font-style: italic;
+            flex-shrink: 0; /* Prevents price from shrinking */
+        }
+
+        .item-price::before {
+            color: #b2966b;
+            content: 'NT$';
+            margin-right: 4px;
+            font-style: normal;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .item-description {
+            font-weight: 300;
+            color: rgba(87, 87, 87, 0.85);
+            text-shadow: none;
+            font-size: 16px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .menu-container {
+                padding: 30px 20px;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .section-title {
+                font-size: 28px;
+                letter-spacing: 8px;
+            }
+
+            .section-title:lang(zh) {
+                font-size: 24px;
+            }
+
+            .item-name {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="section-title text-gradient">SIGNATURE 原創</div>
+            <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Muscat Bubble 葡萄泡沫</span>
+                    <span class="item-price">280</span>
+                </div>
+                <div class="item-description">Gordon gin with Pavan Liqueur, lemon juice, syrup and soda</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Crush 初戀</span>
+                    <span class="item-price">300</span>
+                </div>
+                <div class="item-description">Gordon gin with peach liqueurs, rose syrup, lemon juice and rose</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Tiramisu 提拉米蘇</span>
+                    <span class="item-price">300</span>
+                </div>
+                <div class="item-description">Brandy with Baileys, milk, chocolate and whipping cream</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Kaeng khua 泰式紅咖哩</span>
+                    <span class="item-price">300</span>
+                </div>
+                <div class="item-description">Red Curry Vodka with syrup, lemon juice and ginger ale</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Penicillin 盤尼西林</span>
+                    <span class="item-price">300</span>
+                </div>
+                <div class="item-description">Selection Islay whisky, ginger syrup, and lemon juice</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Miso Soup味噌湯</span>
+                    <span class="item-price">350</span>
+                </div>
+                <div class="item-description">Vodka with Miso, Japanese Dashi and Tofu foam</div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+</body>
+</html>
