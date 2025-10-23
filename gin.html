@@ -162,6 +162,36 @@
                 margin-top: 10px;
             }
         }
+        
+        .cocktail-section {
+            grid-column: span 2;
+        }
+        
+        .cocktail-icon {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+        
+        .cocktail-list {
+            margin-top: 10px;
+        }
+        
+        .cocktail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e8dcc8;
+        }
+        
+        .cocktail-name {
+            font-size: 18px;
+            color: #8b6f47;
+        }
+        
+        .cocktail-price {
+            font-size: 18px;
+            color: #5a4a3a;
+        }
     </style>
 </head>
 <body>
@@ -222,17 +252,17 @@
             
             <!-- 令月 琴酒 -->
             <div class="item">
-                <img src="./img/reigetsu.png" alt="令月 琴酒" class="item-image">
+                <img src="./img/kinosei.png" alt="KI NO SEI" class="item-image">
                 <div class="item-content">
                     <div class="item-header">
-                        <div class="item-name">令月 琴酒</div>
+                        <div class="item-name">KI NO BI SEI</div>
                         <div class="price-box">
-                            <div class="abv">40%</div>
-                            <div class="price">$ 130 (15ml)<br>$ 260 (30ml)</div>
+                            <div class="abv">54.5%</div>
+                            <div class="price">$ 200 (15ml)<br>$ 350 (30ml)</div>
                         </div>
                     </div>
                     <div class="description">
-                        以日本清酒為基底，添加長崎特產原物料浸製並進行蒸餾。長崎嚴選的枇杷、草莓、蜜柑、檸檬和老梅樹樹枝。由於酒造普用梅枝入清這也是清這名稱"Umegaeda"梅枝清造的出來。
+                        季之勢採⽤與「季の美京都手工藝琴酒」完全相同的11種草本植物及辛香料、分成6種風味獨立蒸餾！最⼤的不同就在於：酒精濃度提升為海軍強度型！以強勁的酒精濃度塑造出更精緻濃烈的京都風味。
                     </div>
                 </div>
             </div>
@@ -250,40 +280,6 @@
                     </div>
                     <div class="description">
                         特別興四治時期至今的京都宇治老茶舖─櫻井七茗園跨界合作，從精挑選的「奧之山」茶園精選出優質的茶葉，調製出日本頂級的京都宇治茶種中帶有甘甜香味的「玉露」和「嚴茶」，將其精心調製成「季之茶」琴酒，並讓核心味道長期停留在茶香上。
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Ori-Gin 1848 -->
-            <div class="item">
-                <img src="./img/origin1848.png" alt="Ori-Gin 1848" class="item-image">
-                <div class="item-content">
-                    <div class="item-header">
-                        <div class="item-name">Ori-Gin 1848</div>
-                        <div class="price-box">
-                            <div class="abv">48%</div>
-                            <div class="price">$ 150 (15ml)<br>$ 300 (30ml)</div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        在沖繩首里誕生的釀釀琴酒「ORI-GiN1848」，以熱帶和溫帶的風味為基礎，加入藤蔓植物如杜松子等愉悅的植物風味。檯籍上的1848是瑞穗酒造成立年份，而傳統和挑戰的思想源於日本蒸餾酒的起源地沖繩，首里。
-                    </div>
-                </div>
-            </div>
-            
-            <!-- KI NO BI Edition K -->
-            <div class="item">
-                <img src="./img/kinobi_edition_k.png" alt="KI NO BI Edition K" class="item-image">
-                <div class="item-content">
-                    <div class="item-header">
-                        <div class="item-name">KI NO BI</br> Edition K</div>
-                        <div class="price-box">
-                            <div class="abv">48%</div>
-                            <div class="price">$ 300 (15ml)<br>$ 550 (30ml)</div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        日本京都蒸餾所跟艾雷島的 Kilchoman 合作創造出季之美  Edition K 琴酒，季之美Gin陳年於Kilchoman的泥煤威士忌桶之中，誕生的作品帶陣陣的泥煤香氣，同時又保留了季の美的纖細芳香。
                     </div>
                 </div>
             </div>
@@ -381,6 +377,29 @@
                     </div>
                     <div class="description">
                          黎凡特地中海琴酒屬於 Distilled GIN, 完全採用奶與蜜蒸餾廠生產單一麥芽威士忌的原料(麥芽)和蒸餾器來生產, 所有材料經過浸泡48小時候再經過第三次蒸餾生產而成。本品項特別在來自蘇格蘭艾雷島的泥煤桶中熟成數月後才裝瓶。
+                    </div>
+                </div>
+            </div>
+
+            <div class="item cocktail-section">
+                <div class="item-content">
+                    <div class="item-header">
+                        <div class="item-name">調酒 Cocktails</div>
+                        <div class="cocktail-icon">🍸</div>
+                    </div>
+                    <div class="cocktail-list">
+                        <div class="cocktail-item">
+                            <span class="cocktail-name">Gin & Tonic</span>
+                            <span class="cocktail-price">Gin Price (30ml) + $50</span>
+                        </div>
+                        <div class="cocktail-item">
+                            <span class="cocktail-name">Gin & Soda</span>
+                            <span class="cocktail-price">Gin Price (30ml) + $50</span>
+                        </div>
+                        <div class="cocktail-item">
+                            <span class="cocktail-name">Negroni</span>
+                            <span class="cocktail-price">Gin Price (30ml) + $100</span>
+                        </div>
                     </div>
                 </div>
             </div>
